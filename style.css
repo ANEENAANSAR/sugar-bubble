@@ -386,16 +386,16 @@ header{
         display: grid;
     }
     .groove{
-        width: 100%;
+        width: auto;
         height: 100%;
         margin-top: 10%;
     }
     .back-g{
         align-items: center;
-        width: 147%;
+        width: auto;
     }
     .print{
-        width: 147%;
+        width: auto;
     }
     .none{
         display: none;
