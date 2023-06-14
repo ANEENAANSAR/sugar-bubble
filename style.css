@@ -363,6 +363,7 @@ header{
         font-size: 43px;
         text-align: center;
     }.follow{
+        display: block;
         position: absolute;
         background-color: #FFFFFF;;
         height: 700px;
