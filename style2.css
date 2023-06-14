@@ -85,15 +85,18 @@ hr{
     right: 90%;
 }
 #In-stock{
-    Accect-color: #FF6B00;
+    accent-color: #FF6B00;
 }
 .cake{
-    display: flex;
-    position: absolute;
-    top: 16%;
-    left: 32%;
-    gap: 21%;
+    display: grid;
+    grid-template-columns: repeat(3,315px);
+    margin-left: 25rem;
+    margin-top: -408px;
+}
     
+}
+.aneena{
+    display: flex;
 }
 .margin{
     margin-top: 5%;
@@ -106,7 +109,7 @@ hr{
     display: flex;
     justify-content: space-between;
     background: #FFF3EA;
-    margin-top: 40%;
+    margin-top: 6%;
 }
 .col{
     color: #FF6B00;
@@ -162,13 +165,49 @@ hr{
 .h a{
     color: #FF6B00;
 }
+.fallow{
+    display: none;
+}
 .follow{
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;;
+    height: 700px;
+    width: 330px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    align-items: left;
+    margin-top: 100px;
+    line-height: 2;
+}
+.follow ul{
+    list-style: none;
+}
+.follow h1{
+    color: #FF6B00;
+    margin-bottom: 40%;
+}
+.muff a{
+    color: #FF6B00;
+}
+.muff{
+    margin-bottom: 10%;
+}
+.us{
+    margin-top: 60%;
+}
+.i-5{
+    display: flex;
+}
+
+.filter{
     display: none;
 }
 @media screen and (max-width:800px){
     *{
-        width: 100%;
-        max-width: 100%;
+        /* width: auto; */
     }
     #sty-le{
         display: none;
@@ -190,20 +229,37 @@ hr{
     }
     .cake{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30px,1fr));
-        width: 100%;
+        grid-template-columns: repeat(1,315px);
+        margin-left: 0;
+        margin-top: 20px;
+        align-items: center;
     }
     .bubble{
-        margin-top: 200%;
-        width: 100%;
+        /* margin-top: 200%; */
+        position: absolute;
     }
     .none{
         display: none;
     }
-    .follow{
+    .fallow{
         display: block;
         justify-content: center;
         text-align: center;
-        width: 100%;
+        
+    }
+    .follow{
+        /* display: none; */
+    }
+    .filter{
+        display: block ;
+    }
+    .c{
+        display: flex;
+        color: #FF6B00;
+        gap: 10%;
+    }
+    .f-cake{
+        display: flex;
+        justify-content: space-between;
     }
 }

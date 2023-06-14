@@ -177,6 +177,9 @@ header{
 .mary{
     margin-top: 1%;
 }
+.x-none{
+    width: 330px !important;
+}
 .back-g{
     background-color: #FFF3EA;
     text-align: center;
@@ -308,11 +311,11 @@ header{
     display: none;
 }
 .follow{
-    display: none;
     position: absolute;
     background-color: #FFFFFF;;
     height: 700px;
-    width: 330px;
+    /* width: 330px; */
+    /* overflow: hidden; */
     top: 0;
     right: 0;
     text-align: left;
@@ -320,6 +323,7 @@ header{
     align-items: left;
     margin-top: 100px;
     line-height: 2;
+    transition: width .4s ease;
 }
 .follow ul{
     list-style: none;
@@ -345,10 +349,6 @@ header{
 /* here starts responsive */
 
 @media screen and (max-width:800px){
-    *{
-        width: 100%;
-        max-width: 100%;
-    }
     #sty-le{
         display: none;
     }
@@ -361,51 +361,108 @@ header{
     .fo-nt{
         font-size: 43px;
         text-align: center;
-    }
-    .fnt{
-        font-size: 30px;
-        text-align: center;
-    }
-    .h4p{
-        font-size: 2rem;
-        margin-top: 635px;
-    }
-    .img-1{
+    }.follow{
         position: absolute;
-        width: 347px;
-        left: 95px;
-        top: 356px;
+        background-color: #FFFFFF;;
+        height: 700px;
+        width: 0;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        align-items: left;
+        margin-top: 100px;
+        line-height: 2;
     }
-    .img-2{
-        position: absolute;
-        left: 3px;
-        top: 304px;
-        width: 497px;
+    .follow ul{
+        list-style: none;
     }
-    .bord{
-        display: grid;
+    .follow h1{
+        color: #FF6B00;
+        margin-bottom: 40%;
     }
-    .groove{
-        width: auto;
-        height: 100%;
-        margin-top: 10%;
+    .muff a{
+        color: #FF6B00;
     }
-    .back-g{
-        align-items: center;
-        width: auto;
+    .muff{
+        margin-bottom: 10%;
     }
-    .print{
-        width: auto;
+    .us{
+        margin-top: 60%;
     }
-    .none{
-        display: none;
+    .i-5{
+        display: flex;
     }
-    .mm{
-        margin-top:22px;
-    }
-    .follow{
-        display: block;
-    }
-  
 }
-
+    
+    
+    /* here starts responsive */
+    
+    @media screen and (max-width:800px){
+        #sty-le{
+            display: none;
+        }
+        .ic{
+            display: none;
+        }
+        .span{
+            display: block;
+        }
+        .fo-nt{
+            font-size: 43px;
+            text-align: center;
+        }
+        .fnt{
+            font-size: 30px;
+            text-align: center;
+        }
+        .h4p{
+            font-size: 2rem;
+            margin-top: 504px;
+        }
+        .img-1{
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            left: 95px;
+            top: 448px;
+        }
+        .img-2{
+            position: absolute;
+            left: 42px;
+            top: 417px;
+            width: 76%;
+            height: 64%;
+        }
+        .bord{
+            display: grid;
+        }
+        .groove{
+            width: auto;
+            height: auto;
+            margin-top: 15%;
+        }
+        .back-g{
+            align-items: center;
+            
+        }
+        .best{
+            margin-top: -91%;
+        }
+        .none{
+            display: none;
+        }
+        #mm{
+            margin-top: -3%;
+        }
+        
+        .grid{
+            margin-top: 100%;
+        }
+        .flx{
+            text-align: center;
+            font-size: 70%;
+            gap: 10%;
+        }
+    }
