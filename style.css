@@ -311,6 +311,7 @@ header{
     display: none;
 }
 .follow{
+    display: none;
     position: absolute;
     background-color: #FFFFFF;;
     height: 700px;
@@ -324,7 +325,6 @@ header{
     margin-top: 100px;
     line-height: 2;
     transition: width .4s ease;
-    display: none;
 }
 .follow ul{
     list-style: none;
