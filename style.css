@@ -324,6 +324,7 @@ header{
     margin-top: 100px;
     line-height: 2;
     transition: width .4s ease;
+    display: none;
 }
 .follow ul{
     list-style: none;
